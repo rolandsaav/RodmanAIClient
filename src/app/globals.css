@@ -3,31 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #141414;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.probability-container {
+  display: flex;
+  height: 50px;
+  width: 400px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.offense {
+  background-color: #1d4ed8;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.defense {
+  flex-grow: 1;
+  background-color: #b91c1c;
 }
