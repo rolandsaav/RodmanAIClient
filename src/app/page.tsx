@@ -95,7 +95,9 @@ export default function Home() {
         >
           {round(prob * 100)}%
         </div>
-        <div className="defense"></div>
+        <div className="defense flex text-xl justify-end p-3 font-bold items-center">
+          {100 - round(prob * 100)}%
+        </div>
       </div>
       <div className="flex justify-evenly">
         <Court players={players} updatePlayer={updatePlayer} />
